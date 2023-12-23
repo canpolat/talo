@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "talo", "Talo\talo.csproj", "{941EA66F-C052-4D50-A0B6-C7112695A7E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "talo.Test", "Talo.Test\talo.Test.csproj", "{D52779D7-D5C6-49FA-A25B-42C5DFFBB8CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{941EA66F-C052-4D50-A0B6-C7112695A7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941EA66F-C052-4D50-A0B6-C7112695A7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941EA66F-C052-4D50-A0B6-C7112695A7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941EA66F-C052-4D50-A0B6-C7112695A7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52779D7-D5C6-49FA-A25B-42C5DFFBB8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52779D7-D5C6-49FA-A25B-42C5DFFBB8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52779D7-D5C6-49FA-A25B-42C5DFFBB8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52779D7-D5C6-49FA-A25B-42C5DFFBB8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

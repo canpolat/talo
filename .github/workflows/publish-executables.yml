@@ -1,0 +1,53 @@
+name: Publish Executables
+
+on:
+  release:
+    types: [published]
+
+env:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+jobs:
+  publish:
+
+    permissions:
+      contents: write
+    
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+      - name: Test
+        run: dotnet test --no-build --configuration Release --verbosity normal
+      - name: Publish Linux
+        run: dotnet publish ./Talo/talo.csproj --configuration Release --runtime linux-x64 /p:PublishSingleFile=true /p:UseAppHost=true --output ./publish
+      - name: Publish Windows
+        run: dotnet publish ./Talo/talo.csproj --configuration Release --runtime win-x64 /p:PublishSingleFile=true /p:UseAppHost=true --output ./publish
+      - name: Upload Linux Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./src/publish/talo
+          asset_name: talo
+          asset_content_type: application/octet-stream
+      - name: Upload Windows Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./src/publish/talo.exe
+          asset_name: talo.exe
+          asset_content_type: application/octet-stream
