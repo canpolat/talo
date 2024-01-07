@@ -75,7 +75,11 @@ public class Export(FileSystemInfo taloRootDir, TaloConfiguration taloConfigurat
             foreach (var metadata in allMetadata)
             {
                 var fileId = await CreateHtmlPage(pipeline, metadata, outputDir, configuration.Prefix);
-                createdFiles.Add(new CreatedHtmlPage(metadata.SequenceNumber, fileId, metadata.Title));
+                createdFiles.Add(new CreatedHtmlPage(
+                    SequenceNumber: metadata.SequenceNumber,
+                    LatestStatus: metadata.LatestStatus,
+                    FileId: fileId,
+                    Title: metadata.Title));
             }
 
             await CreateIndexPage(outputDir, createdFiles, console);

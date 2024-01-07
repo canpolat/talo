@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Markdig.Helpers;
 using Talo.FileSystem;
 
 namespace Talo.Templating;
@@ -29,16 +30,24 @@ public static class HtmlTemplates
     public static string IndexTable(List<CreatedHtmlPage> createdFiles)
     {
         var builder = new StringBuilder();
-        builder.Append("<ul>");
+        builder.Append("<table><thead><tr><th>No.</th><th>Status</th><th>Title</th></tr></thead><tbody>");
         foreach (var file in createdFiles)
         {
             var fileName = $"{file.FileId}.html";
-            builder.Append("<li>");
-            builder.Append($"<a href='{fileName}'>{file.SequenceNumber}. {file.Title}</a>");
-            builder.Append("</li>");
+            builder.Append("<tr>");
+            builder.Append("<td>");
+            builder.Append(file.SequenceNumber);
+            builder.Append("</td>");
+            builder.Append("<td>");
+            builder.Append(file.LatestStatus);
+            builder.Append("</td>");
+            builder.Append("<td>");
+            builder.Append($"<a href='{fileName}'>{file.Title}</a>");
+            builder.Append("</td>");
+            builder.Append("</tr>");
         }
 
-        builder.Append("</ul>");
+        builder.Append("</tbody></table>");
         return builder.ToString();
     }
 }

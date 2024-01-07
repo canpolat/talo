@@ -1,3 +1,3 @@
 ﻿namespace Talo.FileSystem;
 
-public record CreatedHtmlPage(int SequenceNumber, string FileId, string Title);
+public record CreatedHtmlPage(int SequenceNumber, string? LatestStatus, string FileId, string Title);
