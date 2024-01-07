@@ -47,17 +47,12 @@ public class Export(FileSystemInfo taloRootDir, TaloConfiguration taloConfigurat
     {
         var allConfigurations = taloConfiguration.GetRecordConfigurations().ToList();
 
-        var filteredConfigurations = types.Count == 0
+        var requestedConfigurations = types.Count == 0
             ? allConfigurations
             : allConfigurations.Where(x => types.Contains(x.Name));
 
-        foreach (var configuration in filteredConfigurations)
+        foreach (var configuration in requestedConfigurations.Where(x => x.IsInitialized()))
         {
-            if (!configuration.IsInitialized())
-            {
-                throw new InvalidOperationException($"'{configuration.Name}' is not initialized. Use 'talo init --help' for more information about initialization");
-            }
-
             var dirPath = configuration.GetRecordDirectoryPath(taloRootDir);
             if (!Directory.Exists(dirPath))
             {
