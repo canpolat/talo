@@ -12,7 +12,7 @@ public class RecordMetadata
     public string Title { get; private set; } = "";
     public int SequenceNumber { get; private set; }
     private readonly List<StatusRow> _statusRows = [];
-    private string? LatestStatus { get; set; }
+    public string? LatestStatus { get; private set; }
 
     public RecordMetadata(string filePath, IConsole console)
     {
