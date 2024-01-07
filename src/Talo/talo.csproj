@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>talo</ToolCommandName>
     <PackageId>Canpolat.Talo</PackageId>
-    <Version>0.1.0-beta-9</Version>
+    <Version>0.1.0-beta-10</Version>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <Authors>Eren Inan Canpolat</Authors>
     <Copyright>Eren Inan Canpolat (c) 2024</Copyright>
@@ -19,11 +19,11 @@
     <RepositoryUrl>https://github.com/canpolat/talo</RepositoryUrl>
     <ProjectUrl>https://github.com/canpolat/talo</ProjectUrl>
     <PackageType>DotnetTool</PackageType>
-    <Description>talo is a CLI tool to manage your ADRs, RFCs, design documents and more.
+    <Description>talo is a CLI tool to manage your ADRs, RFCs, software design documents and more.
 
-      talo makes creation and management of for Architecture Decision Records,
-      Requests for Comments and other design documents easy. You can define your
-      own document types and use talo to manage them as well.</Description>
+      With talo, you can create, update, list, and export your documents. It supports
+      ADRs (Architecture Decision Records) and RFCs (Request for Comments) out of the box.
+      But you can define your own document types.</Description>
   </PropertyGroup>
 
   <ItemGroup>

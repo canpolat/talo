@@ -4,6 +4,7 @@ Reset demo directory
 ```sh
 mkdir -p /tmp/talo # change this path for your system
 cd /tmp/talo       # same here
+rm -r export
 rm -r docs
 rm .talo
 clear
@@ -11,11 +12,11 @@ clear
 
 ## Basics
 
-Initialize ADR with custom template path  
-(template path is optional, you can omit it if you want to use the built-in template)
+Initialize ADR with built-in template
+(You can use the `--template-path` option to specify a custom template)
 ```sh
 clear
-talo init adr --location docs/adr --template-path templates/adr.md
+talo init adr --location docs/adr
 ```
 
 Initialize RFC with built-in template
@@ -50,7 +51,7 @@ talo add adr --title "Use event-based architecture" --status Accepted
 talo add adr --title "Use MS SQL database" --status Accepted
 ```
 
-This new ADR **supersedes** a previous ADR (number 3):
+Create a new ADR that **supersedes** a previous ADR (number 3):
 ```sh
 clear
 talo add adr --title "Use PostgresSQL for all database needs" --status Accepted --supersedes 3

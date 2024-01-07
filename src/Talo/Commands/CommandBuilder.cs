@@ -7,7 +7,7 @@ namespace Talo.Commands;
 public class CommandBuilder(FileSearchResult fileSearchResult)
 {
     private const string AppDescription =
-        "A CLI tool to manage your ADRs, RFCs, design documents and more. See specific command help for more details about usage.";
+        "A CLI tool to manage your ADRs, RFCs, software design documents and more. See specific command help for more details about usage.";
 
     private readonly DirectoryInfo _taloRootDir = fileSearchResult.GetTaloRootDirectory();
     private readonly TaloConfiguration _taloConfiguration = fileSearchResult.GetConfiguration();

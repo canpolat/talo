@@ -11,21 +11,27 @@ Listing and export features set talo apart from similar tools.
 If you are not familiar with ADRs or RFCs, this blog post offers a brief introduction:
 [Documenting Design Decisions using RFCs and ADRs](https://brunoscheufler.com/blog/2020-07-04-documenting-design-decisions-using-rfcs-and-adrs)
 
+<div align="center" style="text-align: center;">
+
 ![GitHub License](https://img.shields.io/github/license/canpolat/talo?logo=github)
 ![Nuget](https://img.shields.io/nuget/v/Canpolat.Talo?logo=nuget)
 ![Dotnet Tool](https://img.shields.io/badge/dotnet-tool-blue)
 ![.NET Version](https://img.shields.io/badge/Version-.NET%208-%23512BD4?logo=.net&logoColor=%23512BD4)
 <br/>
 
-![Static Badge](https://img.shields.io/badge/Runs%20On-Linux-%23FCC624?style=for-the-badge&logo=linux&logoColor=%23FCC624)
-![Static Badge](https://img.shields.io/badge/Runs%20On-Windows-%230078D4?style=for-the-badge&logo=windows&logoColor=%230078D4)
+<img style="vertical-align:middle" alt="Runs on Linux" src="./docs/assets/tux.svg" height=32 />
+<img style="vertical-align:middle" alt="Runs on Windows" src="./docs/assets/windows-logo.svg" height=32 />
+<br/>
+Runs on Linux and Windows
 
 [Features](#features) •
+[Demo](#demo) •
 [Installation](#installation) •
 [Usage](#usage) •
 [Samples](#samples) •
-[Custom templates](#custom-templates) •
-[Demo](#demo)
+[Custom templates](#custom-templates)
+
+</div>
 
 ## Features
 
@@ -43,14 +49,29 @@ status of a document. It will keep the version table tidy. Alternatively, you ca
 document that can be used to browse the documents. It will also create links between
 documents whenever possible. See Export section below.
 
+## Demo
+
+The screencast below (2m40s) demonstrates a subset of talo's functionality for ADR document type.
+All document types have the same features. So, you can perform these operations on any document type.
+
+If you want to try it yourself, you can use the annotated script at [./docs/demo.md](./docs/demo.md).
+
+![Demo](./docs/assets/demo.gif)
+
 ## Installation
 
-talo is released as a dotnet tool. If you already have `dotnet`, issue the following command
+### As dotnet tool
+talo is released as a dotnet tool. If you already have **.NET Runtime 8.0** or later, issue the following command
 to install talo globally:
 
 ```sh
 dotnet tool install --global Canpolat.Talo
 ```
+
+### As single executable
+
+Single executables for Linux and Windows are available under [releases](https://github.com/canpolat/talo/releases).
+You can download the binary executable from under Assets and start using talo.
 
 ## Usage
 
@@ -271,13 +292,6 @@ Make sure to include it towards the top of your document:
 |--------------------------|--------------------|
 | {{STATUS}}               | {{TIME}}           |
 ```
-
-## Demo
-
-The video below demonstrates the functionality. If you want to follow along, or
-reproduce the demo yourself, the source is at [./docs/demo.md](./docs/demo.md)
-
-TODO: Insert GIF or link to demo
 
 ## Credits
 
