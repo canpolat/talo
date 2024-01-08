@@ -17,6 +17,7 @@ If you are not familiar with ADRs or RFCs, this blog post offers a brief introdu
 ![Nuget](https://img.shields.io/nuget/v/Canpolat.Talo?logo=nuget)
 ![Dotnet Tool](https://img.shields.io/badge/dotnet-tool-blue)
 ![.NET Version](https://img.shields.io/badge/Version-.NET%208-%23512BD4?logo=.net&logoColor=%23512BD4)
+![Nuget download count](https://img.shields.io/nuget/dt/Canpolat.Talo)
 <br/>
 
 <img style="vertical-align:middle" alt="Runs on Linux" src="./docs/assets/tux.svg" height=32 />
