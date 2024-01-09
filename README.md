@@ -115,7 +115,7 @@ Initialization for RFC is the same as ADR. By replacing `adr` with `rfc`
 in the above section, you can initialize your RFC workflow:
 
 ```sh
-talo init adr --location docs/rfc
+talo init rfc --location docs/rfc
 ```
 
 #### Bare initialization
