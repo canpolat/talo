@@ -3,7 +3,7 @@
 talo is a CLI tool to manage your ADRs, RFCs, software design documents and more.
 
 With talo, you can create, update, list, and export your documents. It supports
-ADRs (Architecture Decision Records) and RFCs (Request for Comments) out of the box.
+ADRs (Architecture Decision Record) and RFCs (Request for Comments) out of the box.
 But you can define your own document types.
 
 Listing and export features set talo apart from similar tools.
@@ -55,7 +55,8 @@ documents whenever possible. See Export section below.
 The screencast below (2m40s) demonstrates a subset of talo's functionality for ADR document type.
 All document types have the same features. So, you can perform these operations on any document type.
 
-If you want to try it yourself, you can use the annotated script at [./docs/demo.md](./docs/demo.md).
+If you want to try it yourself, you can use the annotated script at [docs/demo.md](./docs/demo.md).
+You can also watch the demo as video at [docs/demo/demo.webm](./docs/demo/demo.webm).
 
 ![Demo](./docs/assets/demo.gif)
 
