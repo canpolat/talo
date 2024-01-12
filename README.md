@@ -56,7 +56,7 @@ The screencast below (2m40s) demonstrates a subset of talo's functionality for A
 All document types have the same features. So, you can perform these operations on any document type.
 
 If you want to try it yourself, you can use the annotated script at [docs/demo.md](./docs/demo.md).
-You can also watch the demo as video at [docs/demo/demo.webm](./docs/demo/demo.webm).
+You can also watch the demo as video at [docs/assets/demo.webm](./docs/assets/demo.webm).
 
 ![Demo](./docs/assets/demo.gif)
 
