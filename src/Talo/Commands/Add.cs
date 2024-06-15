@@ -12,7 +12,9 @@ public class Add(DirectoryInfo taloRootDir)
 
     public Command BuildCommand(List<IRecordConfiguration> recordConfigs)
     {
-        var addCommand = new Command(name: "add", description: Description);
+        var addCommand = new Command(name: "new", description: Description);
+        addCommand.AddAlias("add");
+        addCommand.AddAlias("create");
 
         foreach (var recordConfig in recordConfigs)
         {
