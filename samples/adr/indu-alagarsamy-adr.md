@@ -1,6 +1,6 @@
 # {{SEQUENCE-NUMBER}}. {{TITLE}}
 
-<!-- See https://domainanalysis.io/p/document-your-product-and-software?r=26tm44 for details of this template -->
+<!-- See https://domainanalysis.io/p/document-your-product-and-software for details of this template -->
 
 ## Status
 
@@ -60,5 +60,3 @@ Stakeholders (names and roles) of who participated/signed off in this decision m
 ### Related References
 
 [Link to any meeting notes, Slack threads, Figjam / Miro board links, etc]
-
-
