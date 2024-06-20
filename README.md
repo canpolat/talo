@@ -221,6 +221,17 @@ Note that talo will create an `index.html` file to make browsing easier. It will
 also create links between documents whenever possible (for example, a document will
 have a link to the document that supersedes it, and vice versa).
 
+#### Mermaid support
+
+You can use Mermaid charts in your documents. If you mark them as Mermaid, talo will render them accordingly. The following code-block will be rendered as a Mermaid diagram in the exported HTML:
+
+<pre>
+```mermaid
+flowchart LR
+  A --> B
+```
+</pre>
+
 ### Configuration
 
 The `config` command provides a means to configure the existing document types as well
