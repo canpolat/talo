@@ -8,7 +8,7 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>talo</ToolCommandName>
     <PackageId>Canpolat.Talo</PackageId>
-    <Version>0.3.0</Version>
+    <Version>0.4.0</Version>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <Authors>Eren Inan Canpolat</Authors>
     <Copyright>Eren Inan Canpolat (c) 2024</Copyright>
