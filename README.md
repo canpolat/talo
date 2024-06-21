@@ -215,7 +215,7 @@ By default, it will export all documents. But you can specify types to limit the
 talo export --types adr
 ```
 
-This will create HTMl files at `./export/adr` (relative to `.talo` file).
+This will create HTML files at `./export/adr` (relative to `.talo` file).
 
 Note that talo will create an `index.html` file to make browsing easier. It will
 also create links between documents whenever possible (for example, a document will
