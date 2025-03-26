@@ -30,9 +30,9 @@ jobs:
       - name: Test
         run: dotnet test --no-build --configuration Release --verbosity normal
       - name: Publish Linux
-        run: dotnet publish ./Talo/talo.csproj --configuration Release --runtime linux-x64 /p:PublishSingleFile=true /p:UseAppHost=true --output ./publish
+        run: dotnet publish ./Talo/talo.csproj --configuration Release --framework net8 --runtime linux-x64 /p:PublishSingleFile=true /p:UseAppHost=true --output ./publish
       - name: Publish Windows
-        run: dotnet publish ./Talo/talo.csproj --configuration Release --runtime win-x64 /p:PublishSingleFile=true /p:UseAppHost=true --output ./publish
+        run: dotnet publish ./Talo/talo.csproj --configuration Release --framework net8 --runtime win-x64 /p:PublishSingleFile=true /p:UseAppHost=true --output ./publish
       - name: Upload Linux Release Asset
         uses: actions/upload-release-asset@v1
         env:
